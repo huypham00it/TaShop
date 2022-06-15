@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopee - TA</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="images/logo/ta-logo.png"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="/css/style-prefix.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="overlay" data-overlay></div>
+
+    <!--
+    - MODAL
+  -->
+
+    <%- include('./includes/modal') %>
+
+    <!--
+    - NOTIFICATION TOAST
+  -->
+
+    <%- include('./includes/toast') %>
+
+    <!--
+    - HEADER
+  -->
+
+    <%- include('./includes/header') %>
+
+    <!--
+    - MAIN
+  -->
+
+    <main>
+      <!--
+      - BANNER
+    -->
+
+      <%- include('./includes/banner') %>
+
+      <!--
+      - CATEGORY
+    -->
+
+      <%- include('./includes/category') %>
+
+      <!--
+      - PRODUCT
+    -->
+
+      <div class="product-container">
+        <div class="container">
+          <!--
+          - SIDEBAR
+        -->
+
+          <%- include('./includes/sidebar') %>
+
+          <div class="product-box">
+            <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <%- include('./includes/product-minimal') %>
+
+            <!--
+            - PRODUCT FEATURED
+          -->
+
+          <%- include('./includes/product-featured') %>
+
+            <!--
+            - PRODUCT GRID
+          -->
+
+            <%- include('./includes/product-main') %>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+      <div>
+        <div class="container">
+          <div class="testimonials-box">
+            <!--
+            - TESTIMONIALS
+          -->
+
+          <%- include('./includes/testimonial') %>
+
+            <!--
+            - CTA
+          -->
+
+          <%- include('./includes/cta') %>
+
+            <!--
+            - SERVICE
+          -->
+          <%- include('./includes/service') %>
+            
+          </div>
+        </div>
+      </div>
+
+      <!--
+      - BLOG
+    -->
+  <%- include('./includes/blog') %>
+      
+    <!--
+    - FOOTER
+  -->
+
+    <%- include('./includes/footer') %>
+
+    <!--
+    - custom js link
+  -->
+    <script src="js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

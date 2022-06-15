@@ -1,0 +1,24 @@
+{
+  "name": "tanh_affiliate",
+  "version": "1.0.0",
+  "description": "![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/anon-ecommerce-website)\r ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/anon-ecommerce-website?style=social)\r ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/anon-ecommerce-website?style=social)\r [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee)\r [![YouTube Video Views](https://img.shields.io/youtube/views/3l8Lob4ysI0?style=social)](https://youtu.be/3l8Lob4ysI0)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huypham00it/shoppe_affliate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huypham00it/shoppe_affliate/issues"
+  },
+  "homepage": "https://github.com/huypham00it/shoppe_affliate#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
