@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Preferential = mongoose.Schema({
+const Shoppe = mongoose.Schema({
     name: {
         type: String,
         require: true
@@ -15,4 +15,4 @@ const Preferential = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('ShopeePreferential', Preferential)
+module.exports = mongoose.model('ShopeePreferential', Shoppe)

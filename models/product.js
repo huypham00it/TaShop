@@ -20,10 +20,6 @@ const Product = mongoose.Schema({
     discount: {
         type: Number,
         require: true
-    },
-    type: {
-        type: String,
-        required: true
     }
 })
 

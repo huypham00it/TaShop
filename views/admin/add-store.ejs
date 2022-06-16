@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="/css/add-product.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+    <div class="container">
+        <header>Nhập cửa hàng ưu đãi</header>
+
+        <form action="/admin/product/add-store" method="POST">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Chi tiết thông tin</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Tên</label>
+                            <input type="text" name="name" placeholder="Nhập tên sản phẩm" autocomplete="off" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Link</label>
+                            <input type="text" name="link" placeholder="Nhập short link" autocomplete="off" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Hình ảnh</label>
+                            <input type="text" name="image" placeholder="Nhập link ảnh" autocomplete="off" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Bấm để thêm cửa hàng ưu đãi</label>
+                            <button class="nextBtn">
+                                <span class="btnText">Thêm cửa hàng</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="added-product">
+            <% if(data){ %>
+                <p class="info"><%= msg %></p>
+                <div class="img">
+                    <img src="<%= data %>" alt="anh cua hang" width="200px">
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <script src="/js/add-product.js"></script>
+</body>
+</html>
