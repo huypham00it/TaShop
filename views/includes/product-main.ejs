@@ -1,15 +1,15 @@
+<%const getRandomProducts = (arr, n) => { %>
+  <% var result = [] %>
+    <%  var len = arr.length %>
+  <% while (n--) { %>
+      <% var x = Math.floor(Math.random() * len) %>
+      <% result.push(arr[x]) %>
+    <% } %>
+  <% return result %>
+<% } %>
 <div class="product-main">
     <h2 class="title">Sản Phẩm Mới</h2>
-    <%const gerRandomProducts = (arr, n) => { %>
-      <% var result = [] %>
-        <%  var len = arr.length %>
-      <% while (n--) { %>
-          <% var x = Math.floor(Math.random() * len) %>
-          <% result.push(arr[x]) %>
-        <% } %>
-      <% return result %>
-  <% } %>
-    <% const prods = gerRandomProducts(products, 12) %>
+    <% const prods = getRandomProducts(products, 12) %>
     <div class="product-grid">
       <% prods.forEach(prod => { %>
         <div class="showcase">
